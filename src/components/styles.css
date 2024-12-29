@@ -1,0 +1,458 @@
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #444;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* Card Container */
+  .hero-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  /* Card Styles */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Hero Section Card */
+  .hero-card h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  /* Profile Picture Styling */
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Experience and Education Card Content */
+  .card-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .card-item {
+    text-align: left;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0077b6;
+  }
+  
+  .card-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-card h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-card p {
+      font-size: 1rem;
+    }
+  
+    .card-item {
+      padding: 10px;
+    }
+  }
+
+  /* Navbar Styles */
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px; /* Add some padding around the navbar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0;
+    width: 100%; /* Make the navbar stretch across the entire width */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    gap: 20px; /* Add space between the links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar ul li {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text for links */
+    font-size: 1.2rem; /* Set font size */
+    font-weight: 500; /* Slightly bold font */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .navbar ul li a:hover {
+    color: #ff6f61; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
+      gap: 15px; /* Adjust spacing for vertical layout */
+    }
+  
+    .navbar ul li a {
+      font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+  }
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual Project Card */
+  .project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Project Image 
+  .project-image {
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Project Content */
+  .project-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-item {
+      width: 90%;
+      max-width: 400px;
+    }
+  
+    .project-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .project-content p {
+      font-size: 0.9rem;
+    }
+  }
+    /* Footer Section */
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for visibility */
+    text-align: center;
+    padding: 20px 10px;
+    position: relative; /* Ensures smooth styling without sticking to the bottom */
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    font-size: 1rem;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px; /* Adds a subtle spacing for readability */
+    line-height: 1.5;
+  }
+  
+  .footer a {
+    color: #00aaff; /* Highlighted link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00; /* Change color on hover for interactivity */
+  }
+  
+  /* Animated Social Icons */
+  .footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #555; /* Background for the icons */
+    color: #fff; /* Icon color */
+    border-radius: 50%; /* Circle design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    background-color: #00aaff; /* Color change on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    .footer {
+      font-size: 0.9rem;
+    }
+  
+    .footer .social-icons a {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  }
+/* Skills Section */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .skills-list li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .skills-list li:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .skills-list {
+      gap: 5px;
+    }
+  
+    .skills-list li {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  /* Contact Component Styles */
+.contact {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px; /* Increased padding */
+    margin: 80px auto; /* Added margin to prevent overlap with nav and footer */
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 30px; /* Adjusted padding for smaller screens */
+      margin: 60px auto; /* Adjusted margin for smaller screens */
+      width: 90%;
+    }
+  
+    .contact h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-info {
+      font-size: 0.9rem;
+    }
+  }
+    
